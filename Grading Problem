@@ -1,0 +1,31 @@
+/* Problem Link : https://www.hackerrank.com/challenges/grading/problem */
+import java.io.*;
+class Sol
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        int n=Integer.parseInt(br.readLine());
+        int[] grades=new int[n];
+         int[] g=new int[n];
+        int t,k;
+        for(int i=0;i<n;i++)
+        {
+            grades[i]=Integer.parseInt(br.readLine());
+            k=(grades[i])/5;
+            t=5*(k+1);
+            if(grades[i]>37)
+            {
+                if((t-grades[i])<3)
+                    g[i]=t;
+                else
+                    g[i]=grades[i];
+            }
+            if(grades[i]<=37)
+                g[i]=grades[i];
+            System.out.print(""+g[i]);
+            System.out.println("");
+        }
+    }
+}
+

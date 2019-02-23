@@ -1,0 +1,41 @@
+/* Problem Link : https://www.hackerrank.com/challenges/apple-and-orange/problem */
+#include<stdio.h>
+int main()
+    {
+    int a,b,s,t,m,n;
+    scanf("%d %d",&s,&t);
+    scanf("%d %d",&a,&b);
+    scanf("%d %d",&m,&n);
+    int dm[m],dn[n];
+    int ca=0;
+    int co=0;
+    for(int i=0;i<m;i++)
+    {
+    scanf("%d",&dm[i]);
+   if(dm[i]>=(s-a)&&dm[i]<=(t-a))
+        {
+       ca++;
+        }
+    }
+    for(int j=0;j<n;j++)
+        {
+     scanf("%d",&dn[j]);  
+   if(dn[j]<=(t-b) && dn[j]>=(s-b))
+       {
+       co++;
+   }
+     }
+printf("%d\n%d",ca,co);
+    return 0;
+}
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       

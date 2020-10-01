@@ -8,6 +8,7 @@ int findDigits(int n)
   int dig;
   int count=0;
   int n1=n;
+ //while loop helps in fninding the count of digits
   while(n>0)
   {
       dig=n%10;

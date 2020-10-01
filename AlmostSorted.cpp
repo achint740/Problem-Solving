@@ -78,7 +78,7 @@ void almostSorted(vector<int> arr) {
        cout<<"yes";
        return;
    }
-   else if(n==2 && arr[0]>arr[1]){
+   else if(n==2 && arr.at(0)>arr[1]){
         cout<<"yes"<<endl;
         cout<<"swap 1 2";
    }

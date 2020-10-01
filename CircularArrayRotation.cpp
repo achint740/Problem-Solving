@@ -1,4 +1,5 @@
-#include<iostream>
+#include<bits/stdc++.h>
+//Prefer to use bits as it creates less confusion of header files
 using namespace std;
 int main()
 {

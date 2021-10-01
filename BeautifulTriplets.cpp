@@ -6,9 +6,11 @@ int main()
  int c=0;
  cin>>n>>k;
  int a[n];
- for(i=0;i<n;i++)
+ int i=0;
+ while(;i=0;i<n;)
  {
      cin>>a[i];
+     i++;
  }
  for(i=0;i<n;i++)
  {
@@ -17,10 +19,10 @@ int main()
          if(a[j]-a[i]==k)
              {
                  for(t=j+1;t<n;t++)
-                    {
+              
                         if(a[t]-a[j]==k)
                           c++;
-                    }
+                    
              }
      }
  }

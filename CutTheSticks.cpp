@@ -36,7 +36,11 @@ int main()
     t++;
   } while(c>0);
   p=t;
-  for(t=1;t<p-1;t++)
-    cout<<count[t]<<\n;
+
+  int v = 1;
+  while(v < p - 1){
+    cout<<count[v]<<endl;
+    v++;
+  }
   return 0;
 }

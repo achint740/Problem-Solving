@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 // Complete the timeInWords function below.
 void timeInWords(int h, int m) 
@@ -26,7 +26,8 @@ void timeInWords(int h, int m)
 }
 
 int main()
-{
+{   ios::sync_with_stdio(0);
+    cin.tie(0);
     int h;
     cin >> h;
     int m;

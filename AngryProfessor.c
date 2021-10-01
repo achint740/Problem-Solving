@@ -9,16 +9,21 @@ int main()
         scanf("%d",&n);
         scanf("%d",&k);
         int arr[n];
-        for(int j=0;j<n;j++)
+        int j=0;
+        while(j<n)
         {
             scanf("%d",&arr[j]);
-            if(arr[j]<=0)
+            if(arr[j]<=0){
                 count ++;
+            }
+            j++;
         }
-        if(count>=k)
+        if(count>=k){
             printf("NO\n");
-        if(count<k)
+        }
+        if(count<k){
             printf("YES\n");
+        }
         count=0;
     }
 }

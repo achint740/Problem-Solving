@@ -15,11 +15,11 @@ void encryption(string s) {
   {
     if(j<len)
       cout<<s[j];
-      j+=l;
+      j=j+l;
       if(j>=len)
         {
             cout<<" ";
-            i++;
+            i+=1;
             j=i;
         }
   }
@@ -29,7 +29,7 @@ return;
 int main()
 {
     string s;
-    getline(cin, s);
+    getline(cin, s); //For taking line input
 
     encryption(s);
     return 0;

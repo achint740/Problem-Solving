@@ -1,7 +1,9 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
   int n,ar[1000],count[1000],t=1,c,p;
   cin>>n;
   for(int i=0;i<n;i++)
@@ -34,6 +36,7 @@ int main()
     t++;
   } while(c>0);
   p=t;
+
   int v = 1;
   while(v < p - 1){
     cout<<count[v]<<endl;

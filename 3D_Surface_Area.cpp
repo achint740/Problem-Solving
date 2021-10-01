@@ -6,8 +6,8 @@ vector<string> split_string(string);
 
 int sumofheights(vector<int>a){
     int s = 0;
-    for(int i=0;i<a.size();i++){
-        s = s + a[i];
+    for(auto ele : a){
+        s = s + ele;
     }
     return s;
 }
